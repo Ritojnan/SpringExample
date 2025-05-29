@@ -1,0 +1,17 @@
+{
+  "name": "Java Spring Boot",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "./mvnw clean install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "pivotal.vscode-spring-boot"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
